@@ -120,7 +120,7 @@ const MostrarMateriales = () => {
           </Link>
           &nbsp;
           <Link
-            to="/editarmaterial"
+            to="/admin/editarmaterial"
             type="button"
             className="btn btn-light"
             title="Editar"
@@ -173,7 +173,7 @@ const MostrarMateriales = () => {
               aria-label="First group"
             >
               <Link
-                to="/crearmaterial"
+                to="/admin/crearmaterial"
                 type="button"
                 className="btn btn-primary"
                 title="Agregar Nuevo"

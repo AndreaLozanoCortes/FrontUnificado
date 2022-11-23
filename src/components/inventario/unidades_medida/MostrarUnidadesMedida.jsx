@@ -146,7 +146,7 @@ const MostrarUnidadesMedida = () => {
           </Link>
           &nbsp;
           <Link
-            to="/editarunidadmedida"
+            to="/admin/editarunidadmedida"
             type="button"
             className="btn btn-light"
             title="Editar"
@@ -199,7 +199,7 @@ const MostrarUnidadesMedida = () => {
               aria-label="First group"
             >
               <Link
-                to="/crearunidadmedida"
+                to="/admin/crearunidadmedida"
                 type="button"
                 className="btn btn-primary"
                 title="Agregar Nuevo"

@@ -359,6 +359,28 @@ const Usuarios = () => {
             
           </div>
         </div> */}
+
+<br />
+      {/*Mostrar los botones: Nuevo, Excel y PDF */}
+      <div className="row">
+
+        {/*Mostrar la barra de busqueda*/}
+        <div className="col-4">
+          <div className="input-group flex-nowrap">
+            <span className="input-group-text" id="addon-wrapping">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              className="form-control me-2"
+              type="text"
+              placeholder="Buscar..."
+              aria-label="Search"
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+
         <div className="col">
           <div
             className="btn-toolbar"
@@ -390,8 +412,21 @@ const Usuarios = () => {
                 className="btn btn-success"
                 title="Exportar a Excel"
                 onClick={() => downloadCSV(registros, "Reporte_usuarios_")}
+
+
+
+                
               >
                 <i class="bi bi-file-excel-fill"></i> Excel
+              </Link>
+
+              <Link
+                to="/"
+                type="button"
+                className="btn btn-danger"
+                title="Exportar a PDF"
+              >
+                <i className="fa-solid fa-file-pdf"></i> PDF
               </Link>
             </div>
           </div>

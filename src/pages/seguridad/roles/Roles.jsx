@@ -16,8 +16,6 @@ export default function Roles(props) {
   var urlApiParam=getOneParam(dataPar,"URL_API")
   const urlapi =urlApiParam.valor
 
-
-
 /** 
    ** Creando bitacora  
    * enviado infromacion de bitacora a la BD
@@ -188,57 +186,50 @@ const [pending, setPending] = React.useState(true);
       
       <div className="container">
         <h5>Roles</h5>
-        <div className="row">
+        <br />
+      {/*Mostrar los botones: Nuevo, Excel y PDF */}
+      <div className="row">
         <div className="col">
           <div
             className="btn-toolbar"
             role="toolbar"
             aria-label="Toolbar with button groups"
           >
-            {/* <div
+            <div
               className="btn-group me-2"
               role="group"
               aria-label="First group"
             >
               <Link
-                to="/crearcategoria"
+                to="/admin/home"
                 type="button"
                 className="btn btn-primary"
                 title="Agregar Nuevo"
               >
-                 Nuevo
-                <i class="fa-solid fa-plus"></i>
+                <i className="fa-solid fa-plus"></i> Nuevo
               </Link>
-            </div> */}
+            </div>
             <div
               className="btn-group me-2"
               role="group"
               aria-label="Second group"
             >
               <Link
+                to="/"
                 type="button"
                 className="btn btn-success"
                 title="Exportar a Excel"
-                onClick={() => downloadCSV(registros,"Reporte_Roles_")}
               >
-                <i class="bi bi-file-excel-fill"></i> Excel
+                <i className="fa-solid fa-file-excel"></i>EXCEL
               </Link>
-              {/* <Link
+              <Link
                 to="/"
                 type="button"
                 className="btn btn-danger"
                 title="Exportar a PDF"
               >
-                <i className="fa-solid fa-file-pdf"></i>
+                <i className="fa-solid fa-file-pdf"></i> PDF
               </Link>
-              <Link
-                to="/"
-                type="button"
-                className="btn btn-secondary"
-                title="?"
-              >
-                <i className="fa-solid fa-question"></i>
-              </Link> */}
             </div>
           </div>
         </div>
@@ -247,15 +238,13 @@ const [pending, setPending] = React.useState(true);
         <div className="col-4">
           <div className="input-group flex-nowrap">
             <span className="input-group-text" id="addon-wrapping">
-            <i class="bi bi-search"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </span>
             <input
               className="form-control me-2"
               type="text"
-              placeholder="Buscar por Nombre o descripción..."
+              placeholder="Buscar..."
               aria-label="Search"
-              value={busqueda}
-              onChange={valorBuscar}
             />
           </div>
         </div>
