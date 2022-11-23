@@ -86,7 +86,7 @@ const URLEditar = "http://190.53.243.69:3001/categoria/actualizar-insertar/";
 
                   if (res.status === 200) {
                     mostrarAlertas("guardado");
-                    navigate("/mostrarcategorias");
+                    navigate("/admin/mostrarcategorias");
                   } else {
                     mostrarAlertas("error");
                   }
@@ -94,7 +94,7 @@ const URLEditar = "http://190.53.243.69:3001/categoria/actualizar-insertar/";
               } catch (error) {
                 console.log(error);
                 mostrarAlertas("error");
-                navigate("/mostrarcategorias");
+                navigate("/admin/mostrarcategorias");
               }
         }}
       >

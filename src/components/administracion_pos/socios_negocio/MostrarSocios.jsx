@@ -198,7 +198,7 @@ const MostrarSocios = () => {
           </Link>
           &nbsp;
           <Link
-            to="/editarsocio"
+            to="/admin/editarsocio"
             type="button"
             className="btn btn-light"
             title="Editar"
@@ -251,7 +251,7 @@ const MostrarSocios = () => {
               aria-label="First group"
             >
               <Link
-                to="/crearsocio"
+                to="/admin/crearsocio"
                 type="button"
                 className="btn btn-primary"
                 title="Agregar Nuevo"

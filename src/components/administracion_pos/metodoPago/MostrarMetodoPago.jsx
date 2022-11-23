@@ -159,7 +159,7 @@ const MostrarRegistros = () => {
           </Link>
           &nbsp;
           <Link
-            to="/editarmetodopago"
+            to="/admin/editarmetodopago"
             type="button"
             className="btn btn-light"
             title="Editar"
@@ -212,7 +212,7 @@ const MostrarRegistros = () => {
               aria-label="First group"
             >
               <Link
-                to="/crearmetodopago"
+                to="/admin/crearmetodopago"
                 type="button"
                 className="btn btn-primary"
                 title="Agregar Nuevo"
