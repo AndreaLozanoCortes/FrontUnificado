@@ -152,7 +152,7 @@ const mostrarAlertas = (alerta) =>{
         <>
           
           <Link
-            to="/editarlibromayor"
+            to="/admin/editarlibromayor"
             type="button"
             className="btn btn-light"
             title="Editar"
@@ -269,7 +269,7 @@ const mostrarAlertas = (alerta) =>{
               className="btn-group me-2"
             >
               <Link
-                to="/mostrarbalance"
+                to="/admin/mostrarbalance"
                 type="button"
                 className="btn btn-danger"
                 title="Agregar Nuevo"
@@ -281,7 +281,7 @@ const mostrarAlertas = (alerta) =>{
               className="btn-group me-2"
             >
               <Link
-                to="/mostrarresultado"
+                to="/admin/mostrarresultado"
                 type="button"
                 className="btn btn-danger"
                 title="Exportar a Excel"
@@ -293,7 +293,7 @@ const mostrarAlertas = (alerta) =>{
               className="btn-group me-2"
               >
               <Link
-                to="/mostraringresosgasto"
+                to="/admin/mostraringresosgasto"
                 type="button"
                 className="btn btn-danger"
                 title="Exportar a PDF"
@@ -305,7 +305,7 @@ const mostrarAlertas = (alerta) =>{
               className="btn-group me-2"
               >
               <Link
-                to="/mayorizar"
+                to="/admin/mayorizar"
                 type="button"
                 className="btn btn-info"
                 title="Exportar a PDF"

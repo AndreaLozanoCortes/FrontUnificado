@@ -85,7 +85,7 @@ const URLEditar = "http://190.53.243.69:3001/mc_destino/actualizar-insertar/";
 
                   if (res.status === 200) {
                     mostrarAlertas("guardado");
-                    navigate("/mostrardestino");
+                    navigate("/admin/mostrardestino");
                   } else {
                     mostrarAlertas("error");
                   }
@@ -93,7 +93,7 @@ const URLEditar = "http://190.53.243.69:3001/mc_destino/actualizar-insertar/";
               } catch (error) {
                 console.log(error);
                 mostrarAlertas("error");
-                navigate("/mostrardestino");
+                navigate("/admin/mostrardestino");
               }
         }}
       >
@@ -176,7 +176,7 @@ const URLEditar = "http://190.53.243.69:3001/mc_destino/actualizar-insertar/";
               Guardar
             </button>
             <Link
-              to="/mostrardestino"
+              to="/admin/mostrardestino"
               type="button"
               className="btn btn-danger mb-3 me-2"
             >

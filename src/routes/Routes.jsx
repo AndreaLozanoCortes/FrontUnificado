@@ -322,7 +322,7 @@ function Rutas() {
             <Route path="crearlibrodetalle" element={<CrearLibroDetalle />} />
 
             {/*ENCABEZADO LIBRO DIARIO*/}
-            <Route path="mostrarlibroencabezado"  element={<MostrarLibroEncabezado />}
+            <Route path="mostrarlibroencabezado" element={<MostrarLibroEncabezado />}
             />
             <Route path="/admin/home" element={<EditarLibroEncabezado />} />
             <Route path="/admin/home" element={<CrearLibroEncabezado />} />

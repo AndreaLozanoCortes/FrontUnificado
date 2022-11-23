@@ -135,7 +135,7 @@ const mostrarAlertas = (alerta) =>{
         <>
           
           <Link
-            to="/editarsubcuenta"
+            to="/admin/editarsubcuenta"
             type="button"
             className="btn btn-light"
             title="Editar"
@@ -188,7 +188,7 @@ const mostrarAlertas = (alerta) =>{
               aria-label="First group"
             >
               <Link
-                to="/crearsubcuenta"
+                to="/admin/crearsubcuenta"
                 type="button"
                 className="btn btn-primary"
                 title="Agregar Nuevo"

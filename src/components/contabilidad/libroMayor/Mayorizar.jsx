@@ -81,7 +81,7 @@ const Mayorizar = () => {
                 console.log(valores)
                   if (res.status === 200) {
                     mostrarAlertas("guardado");
-                    navigate("/mostrarlibromayor");
+                    navigate("/admin/mostrarlibromayor");
                   } else {
                     mostrarAlertas("error");
                   }
@@ -89,7 +89,7 @@ const Mayorizar = () => {
               } catch (error) {
                 console.log(error);
                 mostrarAlertas("error");
-                navigate("/mostrarlibromayor");
+                navigate("/admin/mostrarlibromayor");
               }
         }}
       >
@@ -175,7 +175,7 @@ const Mayorizar = () => {
               Guardar
             </button>
             <Link
-              to="/mostrarlibromayor"
+              to="/admin/mostrarlibromayor"
               type="button"
               className="btn btn-danger mb-3 me-2"
             >

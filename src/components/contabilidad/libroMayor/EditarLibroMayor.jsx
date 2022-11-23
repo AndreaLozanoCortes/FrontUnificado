@@ -112,7 +112,7 @@ const URLEditar = "https://jsonplaceholder.typicode.com/comments";
 
                   if (res.status === 200) {
                     mostrarAlertas("guardado");
-                    navigate("/mostrarlibromayor");
+                    navigate("/admin/mostrarlibromayor");
                   } else {
                     mostrarAlertas("error");
                   }
@@ -120,7 +120,7 @@ const URLEditar = "https://jsonplaceholder.typicode.com/comments";
               } catch (error) {
                 console.log(error);
                 mostrarAlertas("error");
-                navigate("/mostrarlibromayor");
+                navigate("/admin/mostrarlibromayor");
               }
         }}
       >
@@ -301,7 +301,7 @@ const URLEditar = "https://jsonplaceholder.typicode.com/comments";
               Guardar
             </button>
             <Link
-              to="/mostrarlibromayor"
+              to="/admin/mostrarlibromayor"
               type="button"
               className="btn btn-danger mb-3 me-2"
             >

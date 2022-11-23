@@ -94,7 +94,7 @@ const CrearDestino = () => {
                       const res = await axios.put(`${URLCrear}${valores.id_destino_cuenta}`, valores);
                       if (res.status === 200) {
                         mostrarAlertas("guardado");
-                        navigate("/mostrardestino");
+                        navigate("/admin/mostrardestino");
                     } else {
                       mostrarAlertas("error");
                     }
@@ -105,7 +105,7 @@ const CrearDestino = () => {
               } */catch (error) {
                 console.log(error);
                 mostrarAlertas("error");
-                navigate("/mostrardestino");
+                navigate("/admin/mostrardestino");
               }
         }}
       >
@@ -167,7 +167,7 @@ const CrearDestino = () => {
               Guardar
             </button>
             <Link
-              to="/mostrardestino"
+              to="/admin/mostrardestino"
               type="button"
               className="btn btn-danger mb-3 me-2"
             >

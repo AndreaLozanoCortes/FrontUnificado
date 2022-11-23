@@ -111,7 +111,7 @@ const CrearPeriodoContable = () => {
               const res = await axios.put(`${URLCrear}${valores.id_periodo_contable}`, valores);
               if (res.status === 200) {
                 mostrarAlertas("guardado");
-                navigate("/mostrarperiodo");
+                navigate("/admin/mostrarperiodo");
               } else {
                 mostrarAlertas("error");
               }
@@ -123,7 +123,7 @@ const CrearPeriodoContable = () => {
 
             console.log(error);
             mostrarAlertas("error");
-            navigate("/mostrarperiodo");
+            navigate("/admin/mostrarperiodo");
           }
         }}
       >
@@ -305,7 +305,7 @@ const CrearPeriodoContable = () => {
               Guardar
             </button>
             <Link
-              to="/mostrarperiodo"
+              to="/admin/mostrarperiodo"
               type="button"
               className="btn btn-danger mb-3 me-2"
             >
